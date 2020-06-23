@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"net/http"
+	"log"
 
 	_ "github.com/gorilla/mux"
-	"github.com/rs/zerolog/log"
 	"golang.org/x/net/websocket"
 )
 
