@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"net/http"
 	"log"
+	"net/http"
 
 	_ "github.com/gorilla/mux"
 	"golang.org/x/net/websocket"
@@ -26,7 +26,7 @@ var (
 	port = flag.String("port", "9000", "port used for ws connection")
 )
 
-//server func will look like hhtp server, with routing
+//server func will look like http server, with routing
 func server(port string) error {
 	h := newHub()
 	mux := http.NewServeMux()
